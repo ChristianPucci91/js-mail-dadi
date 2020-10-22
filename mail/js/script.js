@@ -19,26 +19,28 @@ button = document.getElementById('button');
 button.addEventListener('click',
 
    function() {
-
+      var emailCorretta = '';
       // emailInserita sarà uguale a ciò che l'utente inserirà nell'input
       emailInserita = document.getElementById('email').value;
+      console.log(emailInserita);
          // controlla se l'email inserita è uguale alla nostra lista email
              for (var i = 0; i < email.length; i++) {
+
                var emailRisultato = email[i];
-             }
-             // fine ciclo for
-              console.log(emailRisultato);
               // dopo aver creato un ciclo di controllo mail andiamo a dettare le condizioni
-                 if ( emailInserita = emailRisultato ) {
-                   alert("Benvenuto")
-                 } else {
-                   alert("vai via")
-                 }
-                 // fine condizione if
-   }
-   // fine function
-
-
-
-
-);
+                if (emailInserita === emailRisultato) {
+                      emailCorretta = 1;
+               } else {
+                  emailCorretta = 0;
+               }
+             }
+              // fine ciclo for
+               if ( emailCorretta = 1) {
+                  alert("Benvenuto")
+               } else {
+                 alert("Non sei il benvenuto")
+               }
+            }
+          // fine function
+   );
+   // fine button

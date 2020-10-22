@@ -9,7 +9,7 @@
 // Creiamo la nostra array
 
 var email = ["Christian@boolean.com","Marco@boolean.com","Giovanni@boolean.com","Paolo@boolean.com","Daniele@boolean.com"];
-console.log(email);
+// console.log(email);
 
 // Variabile per il bottone
 button = document.getElementById('button');
@@ -22,12 +22,12 @@ button.addEventListener('click',
     var emailCorretta = false;
       // emailInserita sarà uguale a ciò che l'utente inserirà nell'input
       emailInserita = document.getElementById('email').value;
-      console.log("l'email inserita è: ", emailInserita);
+      // console.log("l'email inserita è: ", emailInserita);
          // controlla se l'email inserita è uguale alla nostra lista email
              for (var i = 0; i < email.length; i++) {
 
                var emailRisultato = email[i];
-               console.log("Email risultato è: ",emailRisultato);
+               // console.log("Email risultato è: ",emailRisultato);
               // dopo aver creato un ciclo di controllo mail andiamo a dettare le condizioni
                  if (emailInserita == emailRisultato) {
                    emailCorretta = true;
@@ -35,10 +35,10 @@ button.addEventListener('click',
              }
               // fine ciclo for
               if (emailCorretta == true) {
-                 document.getElementById('ciao').innerHTML = "uguale"
+                 alert("Benvenuto nel sito " + emailInserita)
                  // console.log("Email risultato dopo l'if è: ",emailRisultato);
                } else {
-                 document.getElementById('ciao').innerHTML = "non è uguale"
+                 alert("La mail " + emailInserita + " non risulta nei nostri database.")
                }
                // fine ciclo if
             }

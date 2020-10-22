@@ -6,7 +6,6 @@
 
 var button = document.getElementById('button');
 
-
 // all'interno della funzione ci saranno delle variabili giocatore e cpu che genereranno dei numeri
 // random e all'interno delle condizioni per stabilire il punteggio vittoria, sconfitta, pareggio.
 
@@ -16,20 +15,27 @@ button.addEventListener('click',
 
      // Lancia dadi e ottieni numero da 1 a 6
      user = Math.floor(Math.random() * 5) + 1;
-
+     // console.log(user);
+     document.getElementById('user').innerHTML = user;
      // Cpu
-
      cpu = Math.floor(Math.random() * 5) + 1;
+     // console.log(cpu);
+     document.getElementById('cpu').innerHTML = cpu;
+
+     // esito della giocata
+     document.getElementById('esito').innerHTML = esito;
 
       // creiamo delle condizioni
      if (user > cpu) {
-        cpu = document.getElementById('esito').innerhtml = "Hai vinto";
+        esito.innerHTML = "Hai vinto";
      } else if (user < cpu) {
 
-        cpu = document.getElementById('esito').innerhtml = "Hai vinto";
-
+       esito.innerHTML = "Hai perso";
+     } else {
+       esito.innerHTML = "Pareggio";
      }
 
+     // console.log(esito);
 
    }
 );

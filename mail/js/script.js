@@ -30,15 +30,14 @@ button.addEventListener('click',
               // dopo aver creato un ciclo di controllo mail andiamo a dettare le condizioni
                 if (emailInserita === emailRisultato) {
                       emailCorretta = 1;
-               } else {
-                  emailCorretta = 0;
-               }
+                 }
+                 // fine ciclo if
              }
               // fine ciclo for
                if ( emailCorretta = 1) {
-                  alert("Benvenuto")
+                  alert("Benvenuto");
                } else {
-                 alert("Non sei il benvenuto")
+                 alert("Non sei il benvenuto");
                }
             }
           // fine function

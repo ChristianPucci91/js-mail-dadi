@@ -29,20 +29,20 @@ button.addEventListener('click',
      if (user > cpu) {
 
         esito.innerHTML = "Hai vinto";
-        user.className = "bggreen";
-        cpu.className = "bgred";
+        user.className = "bg-green";
+        cpu.className = "bg-red";
 
      } else if (user < cpu) {
 
        esito.innerHTML = "Hai perso";
-       cpu.className = "bggreen";
-       user.className = "bgred";
+       cpu.className = "bg-green";
+       user.className = "bg-red";
 
      } else {
 
        esito.innerHTML = "Pareggio";
-       user.className = "bgyellow";
-       cpu.className = "bgyellow";
+       user.className = "bg-yellow";
+       cpu.className = "bg-yellow";
      }
 
      // console.log(esito);

@@ -29,14 +29,14 @@ button {
 
 /* javascript class */
 
-.bgyellow{
-  background-color: yellow;
+.bg-yellow{
+  background: yellow;
 }
 
-.bggreen {
-  background-color: green;
+.bg-green {
+  background: green;
 }
 
-.bgred {
-  background-color: red;
+.bg-red {
+  background: red;
 }

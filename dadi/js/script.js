@@ -16,11 +16,11 @@ button.addEventListener('click',
      // Lancia dadi e ottieni numero da 1 a 6
      user = Math.floor(Math.random() * 6) + 1;
      // console.log(user);
-     document.getElementById('user').innerHTML = user;
+     document.getElementById('punteggiouser').innerHTML = user;
      // Cpu
      cpu = Math.floor(Math.random() * 6) + 1;
      // console.log(cpu);
-     document.getElementById('cpu').innerHTML = cpu;
+     document.getElementById('punteggiocpu').innerHTML = cpu;
 
      // esito della giocata
      document.getElementById('esito').innerHTML = esito;
@@ -29,20 +29,23 @@ button.addEventListener('click',
      if (user > cpu) {
 
         esito.innerHTML = "Hai vinto";
-        user.className = "bg-green";
-        cpu.className = "bg-red";
+        punteggiouser.className = "bg-green";
+        punteggiocpu.className = "bg-red";
+        esito.className = "bg-green";
 
      } else if (user < cpu) {
 
        esito.innerHTML = "Hai perso";
-       cpu.className = "bg-green";
-       user.className = "bg-red";
+       punteggiocpu.className = "bg-green";
+       punteggiouser.className = "bg-red";
+       esito.className = "bg-red";
 
      } else {
 
        esito.innerHTML = "Pareggio";
-       user.className = "bg-yellow";
-       cpu.className = "bg-yellow";
+       punteggiouser.className = "bg-yellow";
+       punteggiocpu.className = "bg-yellow";
+       esito.className = "bg-yellow";
      }
 
      // console.log(esito);

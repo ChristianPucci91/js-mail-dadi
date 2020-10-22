@@ -27,12 +27,22 @@ button.addEventListener('click',
 
       // creiamo delle condizioni
      if (user > cpu) {
+
         esito.innerHTML = "Hai vinto";
+        user.className = "bggreen";
+        cpu.className = "bgred";
+
      } else if (user < cpu) {
 
        esito.innerHTML = "Hai perso";
+       cpu.className = "bggreen";
+       user.className = "bgred";
+
      } else {
+
        esito.innerHTML = "Pareggio";
+       user.className = "bgyellow";
+       cpu.className = "bgyellow";
      }
 
      // console.log(esito);

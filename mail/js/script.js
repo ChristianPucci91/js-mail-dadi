@@ -19,7 +19,7 @@ button = document.getElementById('button');
 button.addEventListener('click',
 
    function() {
-      var emailCorretta = '';
+
       // emailInserita sarà uguale a ciò che l'utente inserirà nell'input
       emailInserita = document.getElementById('email').value;
       console.log(emailInserita);
@@ -27,18 +27,17 @@ button.addEventListener('click',
              for (var i = 0; i < email.length; i++) {
 
                var emailRisultato = email[i];
+               console.log("Email risultato è: ",emailRisultato);
               // dopo aver creato un ciclo di controllo mail andiamo a dettare le condizioni
-                if (emailInserita === emailRisultato) {
-                      emailCorretta = 1;
-                 }
-                 // fine ciclo if
+
              }
               // fine ciclo for
-               if ( emailCorretta = 1) {
-                  alert("Benvenuto");
+              if (emailInserita == emailRisultato) {
+                 document.getElementById('ciao').innerHTML = "uguale"
                } else {
-                 alert("Non sei il benvenuto");
+                 document.getElementById('ciao').innerHTML = "non è uguale"
                }
+               // fine ciclo if
             }
           // fine function
    );

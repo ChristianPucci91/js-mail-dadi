@@ -14,11 +14,11 @@ button.addEventListener('click',
    function() {
 
      // Lancia dadi e ottieni numero da 1 a 6
-     user = Math.floor(Math.random() * 5) + 1;
+     user = Math.floor(Math.random() * 6) + 1;
      // console.log(user);
      document.getElementById('user').innerHTML = user;
      // Cpu
-     cpu = Math.floor(Math.random() * 5) + 1;
+     cpu = Math.floor(Math.random() * 6) + 1;
      // console.log(cpu);
      document.getElementById('cpu').innerHTML = cpu;
 
